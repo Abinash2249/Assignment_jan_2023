@@ -13,6 +13,35 @@ print(result2)
 
 
 
+
+# 2. Write a Python program to create a dictionary from a string. Track the count of the
+# letters from the string.
+# Input = “broadway”
+# Output = {“b”: 1, “r”: 1, “o”: 1, “a”: 2, “d”: 1, “w”: 1, “y”: 1}
+
+
+
+
+
+
+
+
+
+
+
+# 3. Write a Python program to combine two dictionaries by adding values for common keys.
+# d1 = {'a': 100, 'b': 200, 'c':300}
+# d2 = {'a': 300, 'b': 200, 'd':400}
+# output: {'a': 400, 'b': 400, 'd': 400, 'c': 300}
+
+
+
+
+
+
+
+
+
 # 4. Write a program to check whether a string is anagram or not.
 # An anagram of a string is another string that contains the same characters,
 # only the order of characters can be different. For example, “silent” and “listen” are an anagram of each other.
