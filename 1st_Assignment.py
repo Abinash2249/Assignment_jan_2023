@@ -47,7 +47,7 @@ print(result2)
 # only the order of characters can be different. For example, “silent” and “listen” are an anagram of each other.
 
 first_word = input("Enter a word: ")
-second_word = input("Eter another word: ")
+second_word = input("Enter another word: ")
 if sorted(first_word) == sorted(second_word):
     print("It is an anagram.")
 else:
