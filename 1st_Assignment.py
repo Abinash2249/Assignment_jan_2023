@@ -14,6 +14,11 @@ print(result2)
 
 
 
+
+
+
+
+
 # 2. Write a Python program to create a dictionary from a string. Track the count of the
 # letters from the string.
 # Input = “broadway”
@@ -29,10 +34,45 @@ print(dic)
 
 
 
+
+
+
+
+
+
+
+
 # 3. Write a Python program to combine two dictionaries by adding values for common keys.
 # d1 = {'a': 100, 'b': 200, 'c':300}
 # d2 = {'a': 300, 'b': 200, 'd':400}
 # output: {'a': 400, 'b': 400, 'd': 400, 'c': 300}
+
+d1 = {'a': 100, 'b': 200, 'c':300}
+d2 = {'a': 300, 'b': 200, 'd':400}
+
+d1_a = d1.get("a")
+d1_b = d1.get("b")
+d1_c = d1.get("c")
+d2_a = d2.get("a")
+d2_b = d2.get("b")
+d2_d = d2.get("d")
+
+d3_a = d1_a + d2_a
+d3_b = d1_b + d2_b
+d3_c = d1_c
+d3_d = d2_d
+
+output = {'a': d3_a, 'b': d3_b, 'c': d3_c, 'd': d3_d}
+print(output)
+
+
+
+
+
+
+
+
+
 
 
 
@@ -53,6 +93,7 @@ else:
 
 
 
+
 # 5. Check whether a number is palindrome or not. Palindrome numbers are those which remain same even on reversing.
 # Examples – 111, 131, 222, 212 etc.
 # Input: 121 => The number is palindrome
@@ -66,11 +107,16 @@ else:
 
 
 
+
+
+
+
+
+
 # 6. WAP to prompt the user for hours and rate per hour using input to compute gross pay. Pay the hourly rate for the hours
 # up to 40 and 1.5 times the hourly rate for all hours worked above 40 hours.
 # Use 45 hours and a rate of 10.50 per hour to test the program (the pay should be 498.75).
 # You should use input to read a string and float() to convert the string to a number.
-
 
 
 hours = float(input("Enter the number of hours: "))
