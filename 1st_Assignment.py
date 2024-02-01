@@ -19,11 +19,11 @@ print(result2)
 # Input = “broadway”
 # Output = {“b”: 1, “r”: 1, “o”: 1, “a”: 2, “d”: 1, “w”: 1, “y”: 1}
 
-
-
-
-
-
+word = "broadway"
+dic = {}
+for each in word:
+    dic.update({each: word.count(each)})
+print(dic)
 
 
 
@@ -34,16 +34,13 @@ print(result2)
 # d2 = {'a': 300, 'b': 200, 'd':400}
 # output: {'a': 400, 'b': 400, 'd': 400, 'c': 300}
 
-d1 = {"a": 100, "b": 200, "c": 300}
-d2 = {"a": 300, "b": 200, "c": 400}
 
-result3 = d1.values()
-result4 = d2.values()
-result5 = result3 + result4
+def dict_to_string(**kwargs):
+    return (d3)
 
-
-
-
+d1 = {'a': 100, 'b': 200, 'c': 300}
+d2 = {'a': 300, 'b': 200, 'd':400}
+d3 = {}
 
 # 4. Write a program to check whether a string is anagram or not.
 # An anagram of a string is another string that contains the same characters,
@@ -75,3 +72,20 @@ else:
 
 
 
+# 6. WAP to prompt the user for hours and rate per hour using input to compute gross pay. Pay the hourly rate for the hours
+# up to 40 and 1.5 times the hourly rate for all hours worked above 40 hours.
+# Use 45 hours and a rate of 10.50 per hour to test the program (the pay should be 498.75).
+# You should use input to read a string and float() to convert the string to a number.
+
+
+
+hours = float(input("Enter the number of hours: "))
+rate = float(input("Enter the rate per hour: "))
+if hours <= 40:
+    gross_pay = hours * rate
+    print(f"Your wage is {gross_pay}")
+else:
+    gross_pay = 40 * rate
+    ov_time = (hours - 40) * 1.5 * rate
+    new_gross_pay = gross_pay + ov_time
+    print(f"Your wage is {new_gross_pay}")
