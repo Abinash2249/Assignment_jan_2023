@@ -35,12 +35,6 @@ print(dic)
 # output: {'a': 400, 'b': 400, 'd': 400, 'c': 300}
 
 
-def dict_to_string(**kwargs):
-    return (d3)
-
-d1 = {'a': 100, 'b': 200, 'c': 300}
-d2 = {'a': 300, 'b': 200, 'd':400}
-d3 = {}
 
 # 4. Write a program to check whether a string is anagram or not.
 # An anagram of a string is another string that contains the same characters,
