@@ -1,8 +1,8 @@
 
-from Assignment.Assignment.read import read
-from Assignment.Assignment.insert import insert
-from Assignment.Assignment.update import update
-from Assignment.Assignment.delete import delete
+from Assignment.Assignment2.read import read
+from Assignment.Assignment2.insert import insert
+from Assignment.Assignment2.update import update
+from Assignment.Assignment2.delete import delete
 
 def crud_student():
     selection = input("Enter your choice (i/r/u/d/e): ")
