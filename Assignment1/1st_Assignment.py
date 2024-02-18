@@ -50,20 +50,33 @@ print(dic)
 d1 = {'a': 100, 'b': 200, 'c':300}
 d2 = {'a': 300, 'b': 200, 'd':400}
 
-d1_a = d1.get("a")
-d1_b = d1.get("b")
-d1_c = d1.get("c")
-d2_a = d2.get("a")
-d2_b = d2.get("b")
-d2_d = d2.get("d")
+all_keys = list(set(d1.keys()).union(set(d2.keys())))
+print(all_keys)
+result = dict()
 
-d3_a = d1_a + d2_a
-d3_b = d1_b + d2_b
-d3_c = d1_c
-d3_d = d2_d
+for key in all_keys:
+    if key in d1 and key in d2:
+        result[key] = d1[key] + d2[key]
+    else:
+        result[key] = d1.get(key) or d2.get(key)
 
-output = {'a': d3_a, 'b': d3_b, 'c': d3_c, 'd': d3_d}
-print(output)
+print(result)
+
+
+# d1_a = d1.get("a")
+# d1_b = d1.get("b")
+# d1_c = d1.get("c")
+# d2_a = d2.get("a")
+# d2_b = d2.get("b")
+# d2_d = d2.get("d")
+#
+# d3_a = d1_a + d2_a
+# d3_b = d1_b + d2_b
+# d3_c = d1_c
+# d3_d = d2_d
+#
+# output = {'a': d3_a, 'b': d3_b, 'c': d3_c, 'd': d3_d}
+# print(output)
 
 
 
