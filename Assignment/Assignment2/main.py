@@ -11,9 +11,6 @@ def crud_student():
     def exit_message():
         print("Thank you. See you again !!")
 
-
-
-
     if selection == "i":
         cont = insert()
         crud_student() if cont else exit_message()
@@ -28,7 +25,6 @@ def crud_student():
         crud_student() if cont else exit_message()
     else:
         exit_message()
-
 
 if __name__ == "__main__":
     crud_student()

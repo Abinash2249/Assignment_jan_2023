@@ -1,10 +1,7 @@
 from estd_connection import estd_connection
 
-
-
 def read():
     cursor = estd_connection()
-
     id = input("Enter student ID: ")
 
     sql = f"""
